@@ -1,5 +1,7 @@
 module V1
   class AuctionsController < ApplicationController
+    load_and_authorize_resource
+
     before_action :set_auction, only: [:show, :update, :destroy]
   
     # GET /auctions
